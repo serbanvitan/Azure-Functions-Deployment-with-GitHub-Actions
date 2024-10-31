@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Specify the Python version you are using
+        python-version: '3.8' 
 
     - name: Install dependencies
       run: |
@@ -26,6 +26,6 @@ jobs:
     - name: Deploy to Azure Function
       uses: Azure/functions-action@v1
       with:
-        app-name: Project Azure Function
+        app-name: Project_Azure_Function
         package: .
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
